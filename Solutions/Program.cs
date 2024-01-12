@@ -64,6 +64,14 @@ namespace Solutions
             */
 
             /*
+            Solution5 solution5 = new Solution5();
+
+            int n = 3;
+            double[] numbers = { 6, 2.5, 3.5 };
+            Console.WriteLine(solution5.FindMaxAvgDifference(n, numbers));
+
+            */
+            /*
             Solution6 solution6=new Solution6();
 
             List<string> list1 = new List<string>();
@@ -86,6 +94,8 @@ namespace Solutions
 
             Console.WriteLine(solution7.largestSubString(str));
             */
+
+
 
         }
         
