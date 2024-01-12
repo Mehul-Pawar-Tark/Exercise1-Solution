@@ -8,9 +8,122 @@ namespace Solutions
 {
     internal class Solution10
     {
+        List<String> islands = new List<string>();
         public void setInput()
         {
+            islands = [".#...#.."];
+        }
 
+        public int maxAreaofBeach()
+        {
+            int totalArea = 0;
+            int totalrows = islands.Count;
+
+            for (int row = 0; row < totalrows; row++)
+            {
+                String line = islands[row];
+
+                if (row % 2 == 0)
+                {
+                    String previous = "";
+                    if (row - 1 >= 0)
+                        previous = islands[row - 1];
+
+                    String next = "";
+                    if (row + 1 < totalrows)
+                        next = islands[row + 1];
+
+                    
+                    for (int col = 0; col < line.Length; col++)
+                    {
+                        if (col - 1 >= 0 && (line[col] !=line[col - 1]))
+                            totalArea++;
+                        
+                        if (col + 1 < line.Length && (line[col] !=line[col + 1]))
+                            totalArea++;
+                        
+                        
+                        
+                        if (previous != "")
+                        {
+                            
+                            if(col<previous.Length && (line[col] !=previous[col]))
+                                totalArea++;
+                            
+                            if(col-1>=0 && (line[col] !=previous[col-1]))
+                                totalArea++;
+                            
+                        }
+                        
+                        if(next!="")
+                        {
+                            
+                            if(col<next.Length && (line[col] !=next[col]))
+                            {
+                                totalArea++;
+                            }
+                            if(col-1>=0 && (line[col] !=next[col-1]))
+                            {
+                                totalArea++;
+                            }
+                        }
+                        
+                        
+
+                    }
+                }
+                
+                else
+                {
+                    
+                    String previous = "";
+                    if (row - 1 >= 0)
+                        previous = islands[row - 1];
+
+                    String next = "";
+                    if (row + 1 < totalrows)
+                        next = islands[row + 1];
+
+                    
+                    for (int col = 0; col < line.Length; col++)
+                    {
+                        if (col - 1 >= 0 && (line[col] !=line[col - 1]))
+                            totalArea++;
+
+                        if (col + 1 < line.Length && (line[col] !=line[col + 1]))
+                            totalArea++;
+
+                        
+                        if (previous != "")
+                        {
+                            if (col < previous.Length && (line[col] !=previous[col]))
+                            {
+                                totalArea++;
+                            }
+                            if (col + 1 < previous.Length && (line[col]!=previous[col + 1]))
+                            {
+                                totalArea++;
+                            }
+                        }
+                        if (next != "")
+                        {
+                            if (col < next.Length && (line[col] !=next[col] ))
+                            {
+                                totalArea++;
+                            }
+                            if (col + 1 < previous.Length && (line[col] != next[col+1]))
+                            {
+                                totalArea++;
+                            }
+                        }
+
+                    }
+                      
+                }
+               
+            }
+            
+            return totalArea/2;
         }
     }
 }

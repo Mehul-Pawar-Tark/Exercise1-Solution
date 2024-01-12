@@ -58,11 +58,16 @@ namespace Solutions
             Mailbox mailbox = new Mailbox();
             mailbox.setInput();
             Console.WriteLine(mailbox.impossible());
-            */
+
 
             Solution13 solution13 = new Solution13();
             solution13.setInput();
             Console.WriteLine(solution13.runThreadsaccurence());
+            */
+
+            Solution10 solution10 = new Solution10();
+            solution10.setInput();
+            Console.WriteLine(solution10.maxAreaofBeach());
 
         }
 

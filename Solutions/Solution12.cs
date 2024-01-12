@@ -9,5 +9,6 @@ namespace Solutions
     internal class Solution12
     {
         
+        
     }
 }
