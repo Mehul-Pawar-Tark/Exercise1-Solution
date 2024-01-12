@@ -63,14 +63,11 @@ namespace Solutions
             Console.WriteLine(answer4);
             */
 
-            /*
+            
             Solution5 solution5 = new Solution5();
+            solution5.setInput();
+            Console.WriteLine(solution5.FindMaxAvgDifference());
 
-            int n = 3;
-            double[] numbers = { 6, 2.5, 3.5 };
-            Console.WriteLine(solution5.FindMaxAvgDifference(n, numbers));
-
-            */
 
             /*
             Solution6 solution6=new Solution6();
@@ -89,15 +86,15 @@ namespace Solutions
             solution8.setInput();
             Console.WriteLine(solution8.beautyOfString());
             */
-            
+
 
 
         }
-        
-        
-        
 
-        
+
+
+
+
 
     }
 

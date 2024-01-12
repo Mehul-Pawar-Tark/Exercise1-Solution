@@ -8,9 +8,17 @@ namespace Solutions
 {
     internal class Solution5
     {
-        public double FindMaxAvgDifference(int n,double[] numbers)
+        int n;
+        List<Double> numbers=new List<Double>();
+
+        public void setInput()
         {
-            int len=numbers.Length;
+            n= 3;
+            numbers = [ 6, 2.5, 3.5] ;
+        }
+        public double FindMaxAvgDifference()
+        {
+            int len=numbers.Count;
             double sum = 0;
           
             for(int i=0; i<n; i++)
