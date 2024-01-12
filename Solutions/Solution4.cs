@@ -8,9 +8,21 @@ namespace Solutions
 {
     internal class Solution4
     {
-        public String decodedString(String str, int[] position, int[] lengths)   //solution4
+        String str = "";
+        List<int> position=new List<int>();
+        List<int> lengths=new List<int>();
+
+        public void setInput()
         {
-            for (int i = 0; i < position.Length; i++)
+            str = "misip";
+
+            position = [ 2, 3, 1, 7 ];
+            lengths = [ 1, 1, 2, 2 ];
+
+        }
+        public String decodedString()   //solution4
+        {
+            for (int i = 0; i < position.Count; i++)
             {
                 string temp = str.Substring(position[i], lengths[i]);
                 String revers = "";
@@ -28,7 +40,7 @@ namespace Solutions
 
                 str = str.Substring(0, (position[i] + lengths[i])) + revers + str.Substring(position[i] + lengths[i]);
 
-                Console.WriteLine(str);
+                
             }
 
             return str;

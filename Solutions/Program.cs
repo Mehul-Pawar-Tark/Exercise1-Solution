@@ -45,43 +45,28 @@ namespace Solutions
 
             */
 
-            /*
+           
             Solution4 solution4=new Solution4();
-            String str="misip";
-
-            int[] position = { 2, 3, 1, 7 };
-            int[] lengths = { 1, 1, 2, 2 };
-
+            solution4.setInput();
+            Console.WriteLine(solution4.decodedString());
             
-            String str = "TC206";
-            int[] position = { 1,2,5};
-            int[] lengths = { 1,1,1};
 
-
-            String answer4 = solution4.decodedString(str,position,lengths);
-
-            Console.WriteLine(answer4);
-            */
-
-            
+            /*
             Solution5 solution5 = new Solution5();
             solution5.setInput();
             Console.WriteLine(solution5.FindMaxAvgDifference());
+           
 
-
-            /*
             Solution6 solution6=new Solution6();
             solution6.setInput();
             Console.WriteLine(solution6.scoreOfAll());
-            */
+            
 
-            /*
             Solution7 solution7 = new Solution7();
             solution7.setInput();
             Console.WriteLine(solution7.largestSubString());
-            */
+           
 
-            /*
             Solution8 solution8 = new Solution8();
             solution8.setInput();
             Console.WriteLine(solution8.beautyOfString());
