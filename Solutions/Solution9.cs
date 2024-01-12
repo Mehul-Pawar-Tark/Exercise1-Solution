@@ -14,8 +14,8 @@ namespace Solutions
         String initposition = "";
         public void setInput()
         {
-            n = 3;
-            initposition = "a2";
+            n = 8;
+            initposition = "a8";
         }
 
         public String largestPath()
@@ -38,8 +38,7 @@ namespace Solutions
 
             //currently path is empaty
             String path = "";
-            int count = 1;
-
+           
             bool top_available = true;       bool bottom_available = true;
             bool left_available = true;      bool right_available = true;
 

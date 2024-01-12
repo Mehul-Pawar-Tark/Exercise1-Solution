@@ -47,13 +47,18 @@ namespace Solutions
             Solution8 solution8 = new Solution8();
             solution8.setInput();
             Console.WriteLine(solution8.beautyOfString());
-            */
 
+            
             Solution9 solution9 = new Solution9();
             solution9.setInput();
             Console.WriteLine(solution9.largestPath());
+            */
 
+            
 
+            Mailbox mailbox = new Mailbox();
+            mailbox.setInput();
+            Console.WriteLine(mailbox.impossible());
 
         }
 
