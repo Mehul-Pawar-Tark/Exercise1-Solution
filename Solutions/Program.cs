@@ -8,7 +8,7 @@ namespace Solutions
 
         static void Main(string[] args)
         {
-            
+
             /*
             Solution1 solution1=new Solution1();
             solution1.setinput();
@@ -49,14 +49,13 @@ namespace Solutions
             Console.WriteLine(solution8.beautyOfString());
             */
 
+            Solution9 solution9 = new Solution9();
+            solution9.setInput();
+            Console.WriteLine(solution9.largestPath());
+
 
 
         }
-
-
-
-
-
 
     }
 
