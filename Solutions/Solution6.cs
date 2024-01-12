@@ -8,7 +8,17 @@ namespace Solutions
 {
     internal class Solution6
     {
-        public String scoreOfAll(List<String> list1, List<String> list2, List<String> list3)
+        List<string> list1 = new List<string>();
+        List<string> list2 = new List<string>();
+        List<string> list3 = new List<string>();
+        public void setInput()
+        { 
+            list1.Add("mouse"); list1.Add("dog"); list1.Add("pig"); list1.Add("cat");
+            list2.Add("pig"); list2.Add("dog");
+            list3.Add("dog"); list3.Add("cat");
+        }
+
+        public String scoreOfAll()
         {
             Console.Write(firstScore(list1, list2, list3) + "/");
             Console.Write(firstScore(list2, list1, list3) + "/");

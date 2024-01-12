@@ -71,18 +71,11 @@ namespace Solutions
             Console.WriteLine(solution5.FindMaxAvgDifference(n, numbers));
 
             */
+
             /*
             Solution6 solution6=new Solution6();
-
-            List<string> list1 = new List<string>();
-            List<string> list2 = new List<string>();
-            List<string> list3 = new List<string>();
-
-            list1.Add("mouse"); list1.Add("dog");list1.Add("pig"); list1.Add("cat");
-            list2.Add("pig"); list2.Add("dog");
-            list3.Add("dog"); list3.Add("cat");
-
-            Console.WriteLine(solution6.scoreOfAll(list1,list2,list3));
+            solution6.setInput();
+            Console.WriteLine(solution6.scoreOfAll());
             */
 
             /*
@@ -90,12 +83,12 @@ namespace Solutions
             solution7.setInput();
             Console.WriteLine(solution7.largestSubString());
             */
-            
 
-
+            /*
             Solution8 solution8 = new Solution8();
             solution8.setInput();
             Console.WriteLine(solution8.beautyOfString());
+            */
             
 
 
