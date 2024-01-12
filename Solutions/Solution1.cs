@@ -8,7 +8,19 @@ namespace Solutions
 {
     internal class Solution1
     {
-        public String HuffmanDecoding(String str, Dictionary<String, String> Dictionary)    //solution1
+        String str = "";
+        Dictionary<string, string> Dictionary;
+
+        public void setinput()
+        {
+            str = "101101";
+
+            Dictionary = new Dictionary<string, string>(){{"00", "A"},
+                                                          {"10", "B"},
+                                                          {"01", "C"},
+                                                          {"11", "D" } };
+        }
+        public String HuffmanDecoding()    
         {
             String answer = "";
 

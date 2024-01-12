@@ -7,9 +7,15 @@ using System.Threading.Tasks;
 namespace Solutions
 {
     internal class Solution2
-
     {
-        public String replaceString(String s, String t) //solution2
+        String s = "";
+        String t = "";
+        public void setInput()
+        {
+            s = "abb";
+            t = "c";
+        }
+        public String replaceString() 
         {
             String answer = "";
             char[] S = s.ToCharArray();

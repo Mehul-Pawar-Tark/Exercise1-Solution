@@ -8,50 +8,27 @@ namespace Solutions
 
         static void Main(string[] args)
         {
+            
             /*
             Solution1 solution1=new Solution1();
-            String str = "101101";
-
-            Dictionary<string, string> Dictionary = new Dictionary<string, string>(){{"00", "A"},
-                                                                                  {"10", "B"},
-                                                                                  {"01", "C"},
-                                                                                  {"11", "D" } };
-
-            String answer1=solution1.HuffmanDecoding(str, Dictionary);
-
-            Console.WriteLine(answer1);
-            */
-
-            /*
-            Solution2 solution2=new Solution2();
-            String s = "abb";
-            String t = "c";
-
-            String answer2 = solution2.replaceString(s,t);
-
-            Console.WriteLine(answer2);   
+            solution1.setinput();
+            Console.WriteLine(solution1.HuffmanDecoding());
             
-            */
 
-            /*
+            Solution2 solution2=new Solution2();
+            solution2.setInput();
+            Console.WriteLine(solution2.replaceString());   
+            
+
             Solution3 solution3=new Solution3();
+            solution3.setInput();
+            Console.WriteLine(solution3.minChanges());
 
-            int[] numbers = {11,11,49,7,11,11,7,7,11,49,11};
-
-            int answer3=solution3.minChanges(numbers);
-
-
-            Console.WriteLine("answer is : " + answer3);
-
-            */
-
-           
             Solution4 solution4=new Solution4();
             solution4.setInput();
             Console.WriteLine(solution4.decodedString());
             
-
-            /*
+            
             Solution5 solution5 = new Solution5();
             solution5.setInput();
             Console.WriteLine(solution5.FindMaxAvgDifference());
