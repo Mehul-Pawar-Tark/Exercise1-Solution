@@ -87,14 +87,16 @@ namespace Solutions
 
             /*
             Solution7 solution7 = new Solution7();
-
-
-            String str = "aquickbrownfoxjumpsoverthelazydog";
+            solution7.setInput();
+            Console.WriteLine(solution7.largestSubString());
+            */
             
 
-            Console.WriteLine(solution7.largestSubString(str));
-            */
 
+            Solution8 solution8 = new Solution8();
+            solution8.setInput();
+            Console.WriteLine(solution8.beautyOfString());
+            
 
 
         }

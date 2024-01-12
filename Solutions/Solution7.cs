@@ -8,7 +8,12 @@ namespace Solutions
 {
     internal class Solution7
     {
-        public String largestSubString(String str)
+        public String str = "";
+        public void setInput()
+        {
+            this.str = "aquickbrownfoxjumpsoverthelazydog";
+        }
+        public String largestSubString()
         {
             String answer = "";
             int n = str.Length;
