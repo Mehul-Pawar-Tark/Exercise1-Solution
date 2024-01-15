@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution2
+    internal class LexmaxReplace
     {
         String s = "";
         String t = "";
@@ -15,9 +15,9 @@ namespace Solutions
             s = "abb";
             t = "c";
         }
-        public String replaceString() 
+        public String get() 
         {
-            String answer = "";
+            String lexicographicalString = "";
             char[] S = s.ToCharArray();
             char[] T = t.ToCharArray();
 
@@ -29,13 +29,11 @@ namespace Solutions
                 for (int j = 0; j < T.Length; j++)
                 {
                     if (T[j] != '-' && T[j] > S[i])
-                    {
                         max = j;
-                    }
+                    
                     if (max != -1 && T[j] > T[max])
-                    {
                         max = j;
-                    }
+                    
                 }
 
                 if (max != -1)
@@ -44,9 +42,9 @@ namespace Solutions
                     T[max] = '-';
                 }
 
-                answer += S[i];
+                lexicographicalString += S[i];
             }
-            return answer;
+            return lexicographicalString;
         }
 
     }

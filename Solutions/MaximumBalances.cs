@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution8
+    internal class MaximumBalances
     {
         public string str="";
 
@@ -14,9 +14,9 @@ namespace Solutions
 
         public void setInput()
         {
-            this.str = "((((";
+            this.str = "(()(";
         }
-        public int beautyOfString()
+        public int solve()
         {
             int beauty = 0;
 

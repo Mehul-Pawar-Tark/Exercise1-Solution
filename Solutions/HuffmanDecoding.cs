@@ -6,45 +6,49 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution1
+    internal class HuffmanDecoding
     {
-        String str = "";
-        Dictionary<string, string> Dictionary;
+        public String Archive { get; set; }
+        public Dictionary<string, string> Dictionary { get; set; }
 
         public void setinput()
         {
-            str = "101101";
+            Archive = "101101";
 
             Dictionary = new Dictionary<string, string>(){{"00", "A"},
                                                           {"10", "B"},
                                                           {"01", "C"},
                                                           {"11", "D" } };
         }
-        public String HuffmanDecoding()    
+        
+
+        #region 1. Huffman
+        public String decode(String Archive, Dictionary<string, string> Dictionary)   //Convert encoded String in Original Text 
         {
-            String answer = "";
+            
+            String OriginalText = "";
 
             int index = 0;
-            int n = str.Length;
+            int n = Archive.Length;
 
             while (index < n)
             {
                 string key = "";
 
-
                 while (index < n)
                 {
-                    key += str[index++];
+                    key += Archive[index++];
 
                     if (Dictionary.ContainsKey(key))
                     {
-                        answer += Dictionary[key];
+                        OriginalText += Dictionary[key];
                         break;
                     }
                 }
             }
 
-            return answer;
+            return OriginalText;
         }
+        #endregion
     }
 }

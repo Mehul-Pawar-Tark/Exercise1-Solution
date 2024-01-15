@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution14
+    internal class TurningLightOn
     {
         List<String> pannel=new List<String>();
         public void setInput()
@@ -15,7 +15,7 @@ namespace Solutions
 
         }
 
-        public int minimum_flip()
+        public int minFlips()
         {
            int flips = 0;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution3
+    internal class SortingSubsets
     {
         List<int> nums = new List<int>();
         public void setInput()
@@ -15,7 +15,7 @@ namespace Solutions
             nums = [ 11, 11, 49, 7, 11, 11, 7, 7, 11, 49, 11 ];
 
         }
-        public int minChanges()   
+        public int getMinimalSize()   
         {
             int change = 0;
             int length= nums.Count;

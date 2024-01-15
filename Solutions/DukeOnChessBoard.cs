@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution9
+    internal class DukeOnChessBoard
 
     { 
         int n;
@@ -18,7 +18,7 @@ namespace Solutions
             initposition = "a8";
         }
 
-        public String largestPath()
+        public String dukePath()
         {
             bool[,] visited_matrix=new bool[n,n];
 

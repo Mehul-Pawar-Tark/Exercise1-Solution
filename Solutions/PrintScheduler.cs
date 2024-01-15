@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution13
+    internal class PrintScheduler
     {
         List<String> threads = new List<String>();
         List<String> time_slices = new List<String>();
@@ -16,7 +16,7 @@ namespace Solutions
             time_slices = ["0 20", "0 21"];
         }
 
-        public String runThreadsaccurence()
+        public String getOutput()
         {
             String ThreadsAccurence = "";
 

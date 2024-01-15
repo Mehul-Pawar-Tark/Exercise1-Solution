@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.Immutable;
 
 namespace Solutions
@@ -8,77 +9,89 @@ namespace Solutions
 
         static void Main(string[] args)
         {
+            #region Solution 1 : HuffmanDecoding
+            HuffmanDecoding huffmanDecoding = new HuffmanDecoding();
+            huffmanDecoding.setinput();
+            Console.WriteLine(huffmanDecoding.decode(huffmanDecoding.Archive, huffmanDecoding.Dictionary));
+            #endregion
 
-            /*
-            Solution1 solution1=new Solution1();
-            solution1.setinput();
-            Console.WriteLine(solution1.HuffmanDecoding());
-            
+            #region Solution 2 : LexmaxReplace
+            LexmaxReplace lexmaxReplace = new LexmaxReplace();
+            lexmaxReplace.setInput();
+            Console.WriteLine(lexmaxReplace.get());
+            #endregion
 
-            Solution2 solution2=new Solution2();
-            solution2.setInput();
-            Console.WriteLine(solution2.replaceString());   
-            
+            #region Solution 3 : SortingSubsets
+            SortingSubsets sortingSubsets = new SortingSubsets();
+            sortingSubsets.setInput();
+            Console.WriteLine(sortingSubsets.getMinimalSize());
+            #endregion
 
-            Solution3 solution3=new Solution3();
-            solution3.setInput();
-            Console.WriteLine(solution3.minChanges());
+            #region Solution 4 : PalindromeDecoding
+            PalindromeDecoding palindromeDecoding = new PalindromeDecoding();
+            palindromeDecoding.setInput();
+            Console.WriteLine(palindromeDecoding.decode());
+            #endregion
 
-            Solution4 solution4=new Solution4();
-            solution4.setInput();
-            Console.WriteLine(solution4.decodedString());
-            
-            
-            Solution5 solution5 = new Solution5();
-            solution5.setInput();
-            Console.WriteLine(solution5.FindMaxAvgDifference());
-           
+            #region Solution 5 : MovingAvg
+            MovingAvg movingAvg = new MovingAvg();
+            movingAvg.setInput();
+            Console.WriteLine(movingAvg.difference());
+            #endregion
 
-            Solution6 solution6=new Solution6();
-            solution6.setInput();
-            Console.WriteLine(solution6.scoreOfAll());
-            
+            #region Solution 6 : WordCompositionGame
+            WordCompositionGame wordCompositionGame = new WordCompositionGame();
+            wordCompositionGame.setInput();
+            Console.WriteLine(wordCompositionGame.score());
+            #endregion
 
-            Solution7 solution7 = new Solution7();
-            solution7.setInput();
-            Console.WriteLine(solution7.largestSubString());
-           
+            #region Solution 7 : LargestSubsequence
+            LargestSubsequence largestSubsequence = new LargestSubsequence();
+            largestSubsequence.setInput();
+            Console.WriteLine(largestSubsequence.getLargest());
+            #endregion
 
-            Solution8 solution8 = new Solution8();
-            solution8.setInput();
-            Console.WriteLine(solution8.beautyOfString());
+            #region Solution 8 : MaximumBalances
+            MaximumBalances maximumBalances = new MaximumBalances();
+            maximumBalances.setInput();
+            Console.WriteLine(maximumBalances.solve());
+            #endregion
 
-            
-            Solution9 solution9 = new Solution9();
-            solution9.setInput();
-            Console.WriteLine(solution9.largestPath());
+            #region Solution 9 : DukeOnChessBoard
+            DukeOnChessBoard dukeOnChessBoard = new DukeOnChessBoard();
+            dukeOnChessBoard.setInput();
+            Console.WriteLine(dukeOnChessBoard.dukePath());
+            #endregion
 
-            
-            Solution10 solution10 = new Solution10();
-            solution10.setInput();
-            Console.WriteLine(solution10.maxAreaofBeach());
+            #region Solution 10 : Islands
+            Islands islands = new Islands();
+            islands.setInput();
+            Console.WriteLine(islands.beachLength());
+            #endregion
 
-            
+            #region Solution 11 : Mailbox
             Mailbox mailbox = new Mailbox();
             mailbox.setInput();
             Console.WriteLine(mailbox.impossible());
+            #endregion
 
+            #region Solution 12 : MysticAndCandiesEasy
+            MysticAndCandiesEasy mysticAndCandiesEasy = new MysticAndCandiesEasy();
+            mysticAndCandiesEasy.setInput();
+            Console.WriteLine(mysticAndCandiesEasy.minBoxes());
+            #endregion
 
+            #region Solution 13 : PrintScheduler
+            PrintScheduler printScheduler = new PrintScheduler();
+            printScheduler.setInput();
+            Console.WriteLine(printScheduler.getOutput());
+            #endregion
 
-            Solution13 solution13 = new Solution13();
-            solution13.setInput();
-            Console.WriteLine(solution13.runThreadsaccurence());
-
-
-            Solution14 solution14 = new Solution14();
-            solution14.setInput();
-            Console.WriteLine(solution14.minimum_flip());
-
-            */
-
-            Solution12 solution12 = new Solution12();
-            solution12.setInput();
-            Console.WriteLine(solution12.minimum_box_selection());
+            #region Solution 14 : TurningLightOn
+            TurningLightOn turningLightOn = new TurningLightOn();
+            turningLightOn.setInput();
+            Console.WriteLine(turningLightOn.minFlips());
+            #endregion
 
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution6
+    internal class WordCompositionGame
     {
         List<string> list1 = new List<string>();
         List<string> list2 = new List<string>();
@@ -18,13 +18,15 @@ namespace Solutions
             list3.Add("dog"); list3.Add("cat");
         }
 
-        public String scoreOfAll()
-        {
-            Console.Write(firstScore(list1, list2, list3) + "/");
-            Console.Write(firstScore(list2, list1, list3) + "/");
-            Console.WriteLine(firstScore(list3, list2, list1));
+        public String score()
+        { 
 
-            return "";
+            String Score = "";
+            Score+=firstScore(list1, list2, list3) + "/";
+            Score+=firstScore(list2, list1, list3) + "/";
+            Score+=firstScore(list3, list2, list1);
+
+            return Score;
         }
 
         public int firstScore(List<String> list1, List<String> list2, List<String> list3)

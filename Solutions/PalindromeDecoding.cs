@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution4
+    internal class PalindromeDecoding
     {
         String str = "";
         List<int> position=new List<int>();
@@ -20,7 +20,7 @@ namespace Solutions
             lengths = [ 1, 1, 2, 2 ];
 
         }
-        public String decodedString()   //solution4
+        public String decode()   //solution4
         {
             for (int i = 0; i < position.Count; i++)
             {

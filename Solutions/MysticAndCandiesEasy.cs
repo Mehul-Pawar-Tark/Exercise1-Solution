@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution12
+    internal class MysticAndCandiesEasy
     {
         int C;
         int X;
@@ -35,22 +35,21 @@ namespace Solutions
 
         }
 
-        public int minimum_box_selection()
+        public int minBoxes()
         {
            
             high.Sort();
             int len=high.Count;
 
-            
             int index = 0;
 
             while(index<len)
             {
                 C -= high[index];
+
                 if(C<X)
-                {
                     return (len-index);
-                }
+                
                 index++;
             }
 

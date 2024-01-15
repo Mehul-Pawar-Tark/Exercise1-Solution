@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Solution10
+    internal class Islands
     {
         List<String> islands = new List<string>();
         public void setInput()
@@ -14,7 +14,7 @@ namespace Solutions
             islands = [".#...#.."];
         }
 
-        public int maxAreaofBeach()
+        public int beachLength()
         {
             int totalArea = 0;
             int totalrows = islands.Count;
