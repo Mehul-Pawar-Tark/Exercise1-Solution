@@ -69,11 +69,17 @@ namespace Solutions
             solution13.setInput();
             Console.WriteLine(solution13.runThreadsaccurence());
 
-            */
 
             Solution14 solution14 = new Solution14();
             solution14.setInput();
             Console.WriteLine(solution14.minimum_flip());
+
+            */
+
+            Solution12 solution12 = new Solution12();
+            solution12.setInput();
+            Console.WriteLine(solution12.minimum_box_selection());
+
 
 
         }
