@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class PalindromeDecoding
+    public class PalindromeDecoding
     {
-        String str = "";
-        List<int> position=new List<int>();
-        List<int> lengths=new List<int>();
+        public String str = "";
+        public int[] position=new int[4];
+        public int[] lengths=new int[4];
 
         public void setInput()
         {
@@ -20,11 +20,11 @@ namespace Solutions
             lengths = [ 1, 1, 2, 2 ];
 
         }
-        public String decode()   //solution4
+        public String decode(String str, int[] position, int[] lengths)   //solution4
         {
-            for (int i = 0; i < position.Count; i++)
+            for (int i = 0; i < position.Length; i++)
             {
-                string temp = str.Substring(position[i], lengths[i]);
+                String temp = str.Substring(position[i], lengths[i]);
                 String revers = "";
                 if (temp.Length > 1)
                 {
@@ -36,11 +36,7 @@ namespace Solutions
                 else
                     revers = temp;
 
-
-
-                str = str.Substring(0, (position[i] + lengths[i])) + revers + str.Substring(position[i] + lengths[i]);
-
-                
+                str = str.Substring(0, (position[i] + lengths[i])) + revers + str.Substring(position[i] + lengths[i]);        
             }
 
             return str;

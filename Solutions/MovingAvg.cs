@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class MovingAvg
+    public class MovingAvg
     {
-        int n;
-        List<Double> numbers=new List<Double>();
+        public int n;
+        public double[]numbers=new double[3];
 
         public void setInput()
         {
             n= 3;
             numbers = [ 6, 2.5, 3.5] ;
         }
-        public double difference()
+        public double difference(int n, double[] numbers)
         {
-            int len=numbers.Count;
+            int len=numbers.Length;
             double sum = 0;
           
             for(int i=0; i<n; i++)

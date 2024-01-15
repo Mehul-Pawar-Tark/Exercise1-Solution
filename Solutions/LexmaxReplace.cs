@@ -6,44 +6,33 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class LexmaxReplace
+    public class LexmaxReplace
     {
-        String s = "";
-        String t = "";
+        public String s = "";
+        public String t = "";
         public void setInput()
         {
             s = "abb";
             t = "c";
         }
-        public String get() 
+        public String get(String s,String t) 
         {
             String lexicographicalString = "";
             char[] S = s.ToCharArray();
             char[] T = t.ToCharArray();
+            
+            Array.Sort(T);
+            int Index = T.Length-1;
 
-            for (int i = 0; i < S.Length; i++)
+
+            for(int i=0; i<S.Length; i++)
             {
-
-                int max = -1;
-
-                for (int j = 0; j < T.Length; j++)
-                {
-                    if (T[j] != '-' && T[j] > S[i])
-                        max = j;
-                    
-                    if (max != -1 && T[j] > T[max])
-                        max = j;
-                    
-                }
-
-                if (max != -1)
-                {
-                    S[i] = T[max];
-                    T[max] = '-';
-                }
-
-                lexicographicalString += S[i];
+                if (Index>=0 && T[Index] > S[i])
+                    lexicographicalString+= T[Index--];
+                else
+                    lexicographicalString += S[i];
             }
+            
             return lexicographicalString;
         }
 

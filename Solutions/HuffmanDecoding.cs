@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class HuffmanDecoding
+    public class HuffmanDecoding
     {
         public String Archive { get; set; }
         public Dictionary<string, string> Dictionary { get; set; }

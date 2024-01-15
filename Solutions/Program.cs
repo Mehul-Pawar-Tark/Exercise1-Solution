@@ -9,6 +9,7 @@ namespace Solutions
 
         static void Main(string[] args)
         {
+            
             #region Solution 1 : HuffmanDecoding
             HuffmanDecoding huffmanDecoding = new HuffmanDecoding();
             huffmanDecoding.setinput();
@@ -18,25 +19,27 @@ namespace Solutions
             #region Solution 2 : LexmaxReplace
             LexmaxReplace lexmaxReplace = new LexmaxReplace();
             lexmaxReplace.setInput();
-            Console.WriteLine(lexmaxReplace.get());
+            Console.WriteLine(lexmaxReplace.get(lexmaxReplace.s,lexmaxReplace.t));
             #endregion
+            
 
             #region Solution 3 : SortingSubsets
             SortingSubsets sortingSubsets = new SortingSubsets();
             sortingSubsets.setInput();
-            Console.WriteLine(sortingSubsets.getMinimalSize());
+            Console.WriteLine(sortingSubsets.getMinimalSize(sortingSubsets.nums));
             #endregion
 
             #region Solution 4 : PalindromeDecoding
             PalindromeDecoding palindromeDecoding = new PalindromeDecoding();
             palindromeDecoding.setInput();
-            Console.WriteLine(palindromeDecoding.decode());
+            Console.WriteLine(palindromeDecoding.decode(palindromeDecoding.str,palindromeDecoding.position,palindromeDecoding.lengths));
             #endregion
 
+            //
             #region Solution 5 : MovingAvg
             MovingAvg movingAvg = new MovingAvg();
             movingAvg.setInput();
-            Console.WriteLine(movingAvg.difference());
+            Console.WriteLine(movingAvg.difference(movingAvg.n, movingAvg.numbers));
             #endregion
 
             #region Solution 6 : WordCompositionGame

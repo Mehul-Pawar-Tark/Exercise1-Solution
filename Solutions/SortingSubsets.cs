@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class SortingSubsets
+    public class SortingSubsets
     {
-        List<int> nums = new List<int>();
+        public int[] nums = new int[11];
         public void setInput()
         {
 
             nums = [ 11, 11, 49, 7, 11, 11, 7, 7, 11, 49, 11 ];
 
         }
-        public int getMinimalSize()   
+        public int getMinimalSize(int[] nums)   
         {
             int change = 0;
-            int length= nums.Count;
+            int length= nums.Length;
 
 
             int[] arr = new int[length];
