@@ -37,8 +37,7 @@ namespace Solutions
 
         public int minimum_box_selection()
         {
-            int boxes = 0;
-
+           
             high.Sort();
             int len=high.Count;
 
@@ -55,7 +54,7 @@ namespace Solutions
                 index++;
             }
 
-            return boxes;
+            return 0;
         }
 
         
