@@ -6,44 +6,30 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class TurningLightOn
+    public class TurningLightOn
     {
-        List<String> pannel=new List<String>();
-        public void setInput()
-        {
-            pannel = ["0101","1010","0101","1010"];
-
-        }
-
-        public int minFlips()
+        public String[] pannel = { "0101", "1010", "0101", "1010" };
+      
+        public int minFlips(String[] pannel)
         {
            int flips = 0;
 
-            for (int row = pannel.Count-1; row>=0; row--)
+            for (int row = pannel.Length-1; row>=0; row--)
             {
                 for(int col = pannel[row].Length-1; col>=0; col--)
                 {
                     if (pannel[row][col] == '0')
                     {
-                        flip(row, col);
+                        pannel=flip(row, col,pannel);
                         flips++;
                     }
                 }
             }
+             Console.WriteLine(flips);
            return flips;
         }
 
-        public void print(List<String> pannel)
-        {
-            for(int row = 0; row<pannel.Count; row++)
-            {
-                String bulbs = pannel[row];
-                
-                Console.WriteLine(bulbs);
-            }
-        }
-
-        public void flip(int Row, int Col) 
+        public String[] flip(int Row, int Col, String[] pannel) 
         { 
             for(int row=0; row<=Row; row++)
             {
@@ -68,6 +54,8 @@ namespace Solutions
 
                 pannel[row] = flipedbubles;
             }
+
+            return pannel;
         }
     }
 }

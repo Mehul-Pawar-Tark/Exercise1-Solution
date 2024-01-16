@@ -13,7 +13,7 @@ namespace Solutions
             #region Solution 1 : HuffmanDecoding
             HuffmanDecoding huffmanDecoding = new HuffmanDecoding();
             huffmanDecoding.setinput();
-            Console.WriteLine(huffmanDecoding.decode(huffmanDecoding.Archive, huffmanDecoding.Dictionary));
+             Console.WriteLine(huffmanDecoding.decode(huffmanDecoding.Archive, huffmanDecoding.Dictionary));
             #endregion
 
             #region Solution 2 : LexmaxReplace
@@ -86,11 +86,10 @@ namespace Solutions
             Console.WriteLine(printScheduler.getOutput(printScheduler.threads, printScheduler.time_slices));
             #endregion
 
-            //
+            
             #region Solution 14 : TurningLightOn
             TurningLightOn turningLightOn = new TurningLightOn();
-            turningLightOn.setInput();
-            Console.WriteLine(turningLightOn.minFlips());
+            Console.WriteLine(turningLightOn.minFlips(new String[]{ "0101", "1010", "0101", "1010"}));
             #endregion
 
 
