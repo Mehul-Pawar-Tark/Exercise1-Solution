@@ -56,7 +56,7 @@ namespace Solutions
             #region Solution 8 : MaximumBalances
             MaximumBalances maximumBalances = new MaximumBalances();
             maximumBalances.setInput();
-            Console.WriteLine(maximumBalances.solve());
+            Console.WriteLine(maximumBalances.solve(maximumBalances.str));
             #endregion
 
             #region Solution 9 : DukeOnChessBoard
