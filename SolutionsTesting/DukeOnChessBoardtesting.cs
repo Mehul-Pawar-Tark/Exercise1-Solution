@@ -11,7 +11,7 @@ namespace SolutionsTesting
     public class DukeOnChessBoardtesting
     {
         [TestMethod]
-        public void name()
+        public void duckpath_CheckPath_ReturnsTrue()
         {
             var dukeOnChessBoard=new DukeOnChessBoard();
 

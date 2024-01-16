@@ -66,13 +66,12 @@ namespace Solutions
             Console.WriteLine(dukeOnChessBoard.dukePath(dukeOnChessBoard.n, dukeOnChessBoard.initposition));
             #endregion
 
-            //
             #region Solution 10 : Islands
             Islands islands = new Islands();
-            islands.setInput();
-            Console.WriteLine(islands.beachLength());
+            Console.WriteLine(islands.beachLength(islands.kingdom));
             #endregion
 
+            //
             #region Solution 11 : Mailbox
             Mailbox mailbox = new Mailbox();
             mailbox.setInput();
