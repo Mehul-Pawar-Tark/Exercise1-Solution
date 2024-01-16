@@ -52,7 +52,8 @@ namespace Solutions
             largestSubsequence.setInput();
             Console.WriteLine(largestSubsequence.getLargest(largestSubsequence.str));
             #endregion
-            //
+
+
             #region Solution 8 : MaximumBalances
             MaximumBalances maximumBalances = new MaximumBalances();
             maximumBalances.setInput();
@@ -62,9 +63,10 @@ namespace Solutions
             #region Solution 9 : DukeOnChessBoard
             DukeOnChessBoard dukeOnChessBoard = new DukeOnChessBoard();
             dukeOnChessBoard.setInput();
-            Console.WriteLine(dukeOnChessBoard.dukePath());
+            Console.WriteLine(dukeOnChessBoard.dukePath(dukeOnChessBoard.n, dukeOnChessBoard.initposition));
             #endregion
 
+            //
             #region Solution 10 : Islands
             Islands islands = new Islands();
             islands.setInput();

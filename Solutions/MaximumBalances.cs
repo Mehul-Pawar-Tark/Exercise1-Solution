@@ -10,8 +10,6 @@ namespace Solutions
     {
         public string str="";
 
-        
-
         public void setInput()
         {
             this.str = "(()(";

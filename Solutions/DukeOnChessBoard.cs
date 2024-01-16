@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class DukeOnChessBoard
+    public class DukeOnChessBoard
 
     { 
-        int n;
-        String initposition = "";
+        public int n;
+        public String initposition = "";
         public void setInput()
         {
             n = 8;
             initposition = "a8";
         }
 
-        public String dukePath()
+        public String dukePath(int n,String initposition)
         {
             bool[,] visited_matrix=new bool[n,n];
 
