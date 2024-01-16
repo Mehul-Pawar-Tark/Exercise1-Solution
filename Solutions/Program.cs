@@ -41,18 +41,18 @@ namespace Solutions
             Console.WriteLine(movingAvg.difference(movingAvg.n, movingAvg.numbers));
             #endregion
 
-            //
             #region Solution 6 : WordCompositionGame
             WordCompositionGame wordCompositionGame = new WordCompositionGame();
             Console.WriteLine(wordCompositionGame.score(wordCompositionGame.list1, wordCompositionGame.list2, wordCompositionGame.list3));
             #endregion
 
+           
             #region Solution 7 : LargestSubsequence
             LargestSubsequence largestSubsequence = new LargestSubsequence();
             largestSubsequence.setInput();
-            Console.WriteLine(largestSubsequence.getLargest());
+            Console.WriteLine(largestSubsequence.getLargest(largestSubsequence.str));
             #endregion
-
+            //
             #region Solution 8 : MaximumBalances
             MaximumBalances maximumBalances = new MaximumBalances();
             maximumBalances.setInput();

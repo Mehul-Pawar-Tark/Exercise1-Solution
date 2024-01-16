@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class LargestSubsequence
+    public class LargestSubsequence
     {
         public String str = "";
         public void setInput()
         {
             this.str = "aquickbrownfoxjumpsoverthelazydog";
         }
-        public String getLargest() 
+        public String getLargest(String str) 
         { 
             String answer = "";
             int n = str.Length;
-
 
             int index = 0;
 

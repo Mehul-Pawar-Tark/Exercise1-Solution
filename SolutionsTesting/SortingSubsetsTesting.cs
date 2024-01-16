@@ -23,8 +23,6 @@ namespace SolutionsTesting
             int[] val3 = { 4, 4, 4, 3, 3, 3 }; numbers.Add(val3);
             int[] val4 = { 11, 11, 49, 7, 11, 11, 7, 7, 11, 49, 11 }; numbers.Add(val4);
             
-
-
             int[] answer = {2,0,6,7 };
 
             
