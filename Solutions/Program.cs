@@ -76,7 +76,6 @@ namespace Solutions
             Console.WriteLine(mailbox.impossible(mailbox.Collection, mailbox.addresses));
             #endregion
 
-            //
             #region Solution 12 : MysticAndCandiesEasy
             MysticAndCandiesEasy mysticAndCandiesEasy = new MysticAndCandiesEasy();
             Console.WriteLine(mysticAndCandiesEasy.minBoxes(mysticAndCandiesEasy.C, mysticAndCandiesEasy.X, mysticAndCandiesEasy.high));
@@ -84,10 +83,10 @@ namespace Solutions
 
             #region Solution 13 : PrintScheduler
             PrintScheduler printScheduler = new PrintScheduler();
-            printScheduler.setInput();
-            Console.WriteLine(printScheduler.getOutput());
+            Console.WriteLine(printScheduler.getOutput(printScheduler.threads, printScheduler.time_slices));
             #endregion
 
+            //
             #region Solution 14 : TurningLightOn
             TurningLightOn turningLightOn = new TurningLightOn();
             turningLightOn.setInput();

@@ -6,22 +6,17 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class PrintScheduler
+    public class PrintScheduler
     {
-        List<String> threads = new List<String>();
-        List<String> time_slices = new List<String>();
-        public void setInput()
-        {
-            threads = ["ABCDE"];
-            time_slices = ["0 20", "0 21"];
-        }
-
-        public String getOutput()
+        public String[] threads = {"ABCDE" };
+        public String[] time_slices = { "0 20","0 21"};
+       
+        public String getOutput(String[] threads, String[] time_slices)
         {
             String ThreadsAccurence = "";
 
             //indexes[] for representing each threads index
-            int[] indexes = new int[threads.Count];
+            int[] indexes = new int[threads.Length];
 
             //initialy allthreads are start running form 0 index
 
