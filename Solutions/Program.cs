@@ -74,8 +74,7 @@ namespace Solutions
             //
             #region Solution 11 : Mailbox
             Mailbox mailbox = new Mailbox();
-            mailbox.setInput();
-            Console.WriteLine(mailbox.impossible());
+            Console.WriteLine(mailbox.impossible(mailbox.Collection, mailbox.addresses));
             #endregion
 
             #region Solution 12 : MysticAndCandiesEasy

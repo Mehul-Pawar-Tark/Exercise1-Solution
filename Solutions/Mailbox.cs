@@ -6,25 +6,19 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class Mailbox
+    public class Mailbox
     { 
 
-        String Collection = "";
-        List<string> addresses = new List<string>();
+        public String Collection = "";
+        public String[] addresses = { "123C", "123A", "123 ADA" };
 
-        public void setInput()
-        {
-            Collection = "\"ABCDAAST";
-            addresses = ["111 A ST", "A BAD ST", "B BAD ST"];
-        }
-        public int impossible()
+       
+        public int impossible(String Collection, String[] addresses)
         {
             int impossible_address = 0;
 
             int length=Collection.Length;
             bool[] isused_charector = new bool[length];
-
-           
 
 
             foreach (string address in addresses)
