@@ -71,16 +71,15 @@ namespace Solutions
             Console.WriteLine(islands.beachLength(islands.kingdom));
             #endregion
 
-            //
             #region Solution 11 : Mailbox
             Mailbox mailbox = new Mailbox();
             Console.WriteLine(mailbox.impossible(mailbox.Collection, mailbox.addresses));
             #endregion
 
+            //
             #region Solution 12 : MysticAndCandiesEasy
             MysticAndCandiesEasy mysticAndCandiesEasy = new MysticAndCandiesEasy();
-            mysticAndCandiesEasy.setInput();
-            Console.WriteLine(mysticAndCandiesEasy.minBoxes());
+            Console.WriteLine(mysticAndCandiesEasy.minBoxes(mysticAndCandiesEasy.C, mysticAndCandiesEasy.X, mysticAndCandiesEasy.high));
             #endregion
 
             #region Solution 13 : PrintScheduler
