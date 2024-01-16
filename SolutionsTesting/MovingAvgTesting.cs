@@ -34,7 +34,6 @@ namespace SolutionsTesting
                 }
             }
 
-
             Assert.IsTrue(Isvalide);
         }
     }

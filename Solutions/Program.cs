@@ -35,17 +35,16 @@ namespace Solutions
             Console.WriteLine(palindromeDecoding.decode(palindromeDecoding.str,palindromeDecoding.position,palindromeDecoding.lengths));
             #endregion
 
-            //
             #region Solution 5 : MovingAvg
             MovingAvg movingAvg = new MovingAvg();
             movingAvg.setInput();
             Console.WriteLine(movingAvg.difference(movingAvg.n, movingAvg.numbers));
             #endregion
 
+            //
             #region Solution 6 : WordCompositionGame
             WordCompositionGame wordCompositionGame = new WordCompositionGame();
-            wordCompositionGame.setInput();
-            Console.WriteLine(wordCompositionGame.score());
+            Console.WriteLine(wordCompositionGame.score(wordCompositionGame.list1, wordCompositionGame.list2, wordCompositionGame.list3));
             #endregion
 
             #region Solution 7 : LargestSubsequence

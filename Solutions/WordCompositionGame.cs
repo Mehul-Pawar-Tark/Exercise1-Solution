@@ -6,19 +6,13 @@ using System.Threading.Tasks;
 
 namespace Solutions
 {
-    internal class WordCompositionGame
+    public class WordCompositionGame
     {
-        List<string> list1 = new List<string>();
-        List<string> list2 = new List<string>();
-        List<string> list3 = new List<string>();
-        public void setInput()
-        { 
-            list1.Add("mouse"); list1.Add("dog"); list1.Add("pig"); list1.Add("cat");
-            list2.Add("pig"); list2.Add("dog");
-            list3.Add("dog"); list3.Add("cat");
-        }
+        public String[] list1 = { "cat", "dog", "pig", "mouse" };
+        public String[] list2 = { "cat", "pig" };
+        public String[] list3 = {"dog", "cat"};
 
-        public String score()
+    public String score(String[] list1, String[] list2, String[] list3)
         { 
 
             String Score = "";
@@ -29,25 +23,22 @@ namespace Solutions
             return Score;
         }
 
-        public int firstScore(List<String> list1, List<String> list2, List<String> list3)
+        public int firstScore(String[] list1, String[] list2, String[] list3)
         {
 
             int first_score = 0;
 
-            for (int i = 0; i < list1.Count; i++)
+            for (int i = 0; i < list1.Length; i++)
             {
                 if ((!list2.Contains(list1[i])) && (!list3.Contains(list1[i])))
-                {
                     first_score += 3;
-                }
+                
                 else if ((!list2.Contains(list1[i])) || (!list3.Contains(list1[i])))
-                {
                     first_score += 2;
-                }
+                
                 else
-                {
                     first_score++;
-                }
+                
             }
 
             return first_score;
